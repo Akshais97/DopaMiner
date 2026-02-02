@@ -1,0 +1,102 @@
+/* Poster Modal Styles */
+.poster-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+.poster-content {
+    background: #111;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.poster-text {
+    font-size: 2rem;
+    font-family: monospace;
+    letter-spacing: 0.1em;
+    color: var(--color-accent-growth);
+}
+
+.poster-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Chores Section */
+.chores-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.chores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.chore-card {
+    background: var(--color-bg-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-card);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.chore-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent-growth);
+}
+
+.chore-icon {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.chore-label {
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* Updated Philosophy Section to be clickable */
+.philosophy-clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.philosophy-clickable:hover {
+    transform: scale(1.01);
+}

@@ -1,0 +1,79 @@
+:root {
+  /* ChatGPT-inspired Dark Theme */
+  --color-bg-primary: #343541;
+  /* Main background */
+  --color-bg-secondary: #202123;
+  /* Darker sections (Sidebar/Footer equivalent) */
+
+  /* Text */
+  --color-text-primary: #ECECF1;
+  /* Main text (Off-white) */
+  --color-text-secondary: #C5C5D2;
+  /* Secondary text (Light grey) */
+
+  /* Accents */
+  --color-accent-growth: #10A37F;
+  /* ChatGPT Green-ish (Growth) */
+  --color-accent-reward: #D8CFA8;
+  /* Keep Gold for reward */
+  --color-accent-focus: #7D7D8E;
+  /* Muted grey/purple */
+  --color-accent-redpill: #EF4146;
+  /* Brighter Red for dark mode */
+  --color-accent-calm: #95A5A6;
+  /* Muted Blue/Grey for dark mode */
+
+  /* Spacing & Layout */
+  --spacing-unit: 8px;
+  --border-radius-card: 12px;
+  --border-radius-button: 6px;
+  /* Slightly squarer like GPT */
+
+  /* Fonts */
+  --font-family-base: 'Söhne', 'Inter', system-ui, -apple-system, sans-serif;
+  /* Söhne is GPT font, fallback to Inter */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Reset basics */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

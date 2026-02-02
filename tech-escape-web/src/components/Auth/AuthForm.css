@@ -1,0 +1,87 @@
+/* AuthForm.css */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.form-input {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-button);
+    font-size: 1rem;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-accent-growth);
+    background-color: var(--color-bg-primary);
+    box-shadow: 0 0 0 3px rgba(201, 214, 204, 0.3);
+    /* Soft Sage glow */
+}
+
+.auth-submit-btn {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    padding: 1rem;
+    border-radius: var(--border-radius-button);
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.1s ease;
+}
+
+.auth-submit-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.auth-link-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 0 0.3rem;
+    cursor: pointer;
+}
+
+.auth-link-btn:hover {
+    color: var(--color-accent-reward);
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+}
